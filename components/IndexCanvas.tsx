@@ -130,7 +130,12 @@ useEffect(() => {
       }
 
     } else if (result.type === 'Err') {
-      console.log('result is Error');
+      setOutcome('');
+      setTokenJson('');
+      setTokenImageUri('');
+      setTokenName(result.toString());
+      setTokenDescription('');
+      setOwnerAddress('');
     }
 
   };
